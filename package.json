@@ -1,0 +1,21 @@
+{
+  "name": "zhello",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@sap/grunt.sapui5-bestpractice-build": "1.30.50"
+  },
+  "scripts": {
+    "build": "ui5 build --include-task=generateManifestBundle generateCachebusterInfo",
+    "start-local": "node node_modules/@sap/html5-repo-mock/index.js",
+    "test": "karma start"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ui5-builder-webide-extension"
+    ]
+  },
+  "dependencies": {
+    "@sap/approuter": "^8.5.5",
+    "@sap/html5-repo-mock": "^1.7.1"
+  }
+}
